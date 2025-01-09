@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <h1>ამინდის აპლიკაცია</h1>
+
+    <h3>შეიყვანე კოორდინატები</h3>
+    <label for="latitude">გრძედი:</label>
+    <input type="text" id="latitude" placeholder="შეიყვანე გრძედი" />
+
+    <label for="longitude">განედი:</label>
+    <input type="text" id="longitude" placeholder="შეიყვანე განედი" />
+    <button id="getWeatherByCoordinates">მოძებნე ამინდი</button>
+    <p id="weatherByCoordinates"></p>
+
+    <h3>მოძებნე ამინდი ქალაქის სახელის მიხედვით</h3>
+    <label for="city">ქალაქის სახელი:</label>
+    <input type="text" id="city" placeholder="შეიყვანე ქალაქის სახელი" />
+    <button id="getWeatherByCity">მოძებნე ამინდი</button>
+
+    <p id="weatherByCity"></p>
+
+    <div id="windInfo"></div>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
